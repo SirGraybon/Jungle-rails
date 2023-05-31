@@ -1,3 +1,13 @@
+<%= puts enhanced_cart.count.to_i %> 
+<% if enhanced_cart.count.to_i == 0 %>
+
+<header class="page-header">
+  <h1>Trying to start your own jungle with an empty cart? 😅 
+  <a href="/"> Click here for some inspiration.. </a>
+  </h1>
+  </header>
+
+<% else %>
 <section class="cart-show">
 
   <header class="page-header">
@@ -32,6 +42,7 @@
     </table>
   </div>
 
+ 
   <div class="row">
     <div class="col-xs-12">
       <%= form_tag orders_path do %>
@@ -46,7 +57,9 @@
           data-currency="cad">
         </script>
       <% end %>
-    </div>
-  </div>
-
-</section>
+      </div>
+      </div>
+      
+      
+      </section>
+      <% end %>
