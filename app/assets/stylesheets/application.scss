@@ -112,4 +112,21 @@ form.button_to {
   color: #f38792 !important;
 }
 
+.login {
+display: block;
+padding: 0.5rem 1rem;
+align-items: center;
+text-align: center;
+color: #f38792;
+text-decoration: none;
+transition: 0.3s;
+
+
+  &:hover{
+    color: white;
+  }
+
+
+}
+
 
