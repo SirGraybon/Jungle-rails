@@ -36,8 +36,7 @@ RSpec.describe User, type: :model do
  
   end
 describe 'authenticate_with_credentials' do
-  it "logs in successfully" do
-  
+  it "logs in successfully" do  
     expect(User.authenticate_with_credentials("david@test.com","12345678" )).to_not be_nil 
   end
 
