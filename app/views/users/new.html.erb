@@ -1,6 +1,6 @@
 <h1>Create an account</h1>
-
-<%= form_for :user, url: '/users' do |f| %>
+<div class="user_form">
+<%= form_for :user, url: '/users', class: "user_form" do |f| %>
 
   Name: <%= f.text_field :name %>
   Email: <%= f.text_field :email %>
@@ -8,4 +8,6 @@
   Password Confirmation: <%= f.password_field :password_confirmation %>
   <%= f.submit "Submit" %>
 
+
 <% end %>
+</div>
